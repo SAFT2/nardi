@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nardi's Beauty Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nardi's Beauty</div>
+        <button class="hamburger">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="about">
+        <div class="owner-hero">
+            <img src="photo_2025-03-19_11-57-13.jpg" alt="Nardi, Founder of Nardi's Beauty Shop">
+            <h1>Meet Nardi</h1>
+        </div>
+        <h2>About Nardi's Beauty Shop</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Nardi, a passionate entrepreneur from Addis Ababa, founded Nardi’s Beauty Shop in 2020 to empower women through beauty. With a vision to bring high-quality cosmetics, human hair, and services to Ethiopia, Nardi has built a haven where every woman can feel confident and beautiful.</p>
+                <h3>Our Mission</h3>
+                <p>To provide premium beauty products and services that celebrate individuality, enhance natural beauty, and inspire self-love.</p>
+            </div>
+        </div>
+        <h3>Meet Our Team</h3>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="nardos.jpg" alt="Nardos - Makeup Artist">
+                <h4>Nardos - Makeup Artist</h4>
+            </div>
+            <div class="team-card">
+                <img src="sara.jpg" alt="Sara - Hair Stylist">
+                <h4>Sara - Hair Stylist</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nardi's Beauty Shop</h3>
+                <p>Addis Ababa, Ethiopia</p>
+                <p>Email: info@nardibeauty.et</p>
+                <p>Phone: +251 912 345 678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Beauty Tips</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://tiktok.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tiktok.svg" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 Nardi's Beauty Shop | Designed with Love</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

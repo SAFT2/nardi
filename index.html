@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nardi's Beauty Shop - Addis Ababa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nardi's Beauty</div>
+        <button class="hamburger">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Nardi's Beauty Shop</h1>
+            <p>Your one-stop destination for beauty, elegance, and confidence in Addis Ababa.</p>
+            <a href="products.html" class="btn">Explore Products</a>
+            <a href="services.html" class="btn secondary">Book a Service</a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="perfumeluxury.jpg" alt="Luxury Perfumes">
+                <h3>Luxury Perfumes</h3>
+                <p>Discover exotic scents that define your personality.</p>
+                <a href="products.html#perfumes" class="btn small">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796" alt="Makeup">
+                <h3>Premium Makeup</h3>
+                <p>Enhance your beauty with top-tier cosmetics.</p>
+                <a href="products.html#makeup" class="btn small">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="humanhair.jpg" alt="Human Hair">
+                <h3>Human Hair</h3>
+                <p>High-quality wigs and extensions for every style.</p>
+                <a href="products.html#hair" class="btn small">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-overview">
+        <h2>Our Beauty Services</h2>
+        <p>Indulge in a range of treatments designed to pamper and uplift.</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="makeup.jpg" alt="Makeup Application">
+                <h3>Makeup Application</h3>
+                <p>Professional makeup for events or everyday glamour.</p>
+            </div>
+            <div class="service-card">
+                <img src="hairstyle.jpg" alt="Hair Styling">
+                <h3>Hair Styling</h3>
+                <p>Custom cuts, colors, and styling by experts.</p>
+            </div>
+        </div>
+        <a href="services.html" class="btn">See All Services</a>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Nardi’s products transformed my daily routine. The perfumes are divine!"</p>
+                <h4>- Selam T., Addis Ababa</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The hair extensions are top quality, and the staff are so friendly."</p>
+                <h4>- Eden M., Bole</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nardi's Beauty Shop</h3>
+                <p>Addis Ababa, Ethiopia</p>
+                <p>Email: info@nardibeauty.et</p>
+                <p>Phone: +251 912 345 678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Beauty Tips</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://tiktok.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tiktok.svg" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 Nardi's Beauty Shop | Designed with Love</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

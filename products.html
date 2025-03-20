@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Nardi's Beauty Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nardi's Beauty</div>
+        <button class="hamburger">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="products">
+        <h2>Our Product Collection</h2>
+        <p>Explore our wide range of beauty essentials crafted for you.</p>
+
+        <div class="product-category" id="perfumes">
+            <h3>Perfumes</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="florabliss.jpg" alt="Floral Bliss Perfume">
+                    <h4>Floral Bliss</h4>
+                    <p>ETB 1,200</p>
+                    <a href="#" class="btn small">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="oudelegance.jpg" alt="Oud Elegance Perfume">
+                    <h4>Oud Elegance</h4>
+                    <p>ETB 1,500</p>
+                    <a href="#" class="btn small">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category" id="makeup">
+            <h3>Makeup</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="matte.jpg" alt="Matte Lipstick">
+                    <h4>Matte Lipstick</h4>
+                    <p>ETB 450</p>
+                    <a href="#" class="btn small">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="glow.jpg" alt="Foundation Glow">
+                    <h4>Foundation Glow</h4>
+                    <p>ETB 800</p>
+                    <a href="#" class="btn small">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category" id="hair">
+            <h3>Human Hair</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="curl.jpg" alt="Curly Extensions">
+                    <h4>Curly Extensions</h4>
+                    <p>ETB 3,000</p>
+                    <a href="#" class="btn small">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="straightwig.jpg" alt="Straight Wigs">
+                    <h4>Straight Wigs</h4>
+                    <p>ETB 2,800</p>
+                    <a href="#" class="btn small">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nardi's Beauty Shop</h3>
+                <p>Addis Ababa, Ethiopia</p>
+                <p>Email: info@nardibeauty.et</p>
+                <p>Phone: +251 912 345 678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Beauty Tips</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://tiktok.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tiktok.svg" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 Nardi's Beauty Shop | Designed with Love</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

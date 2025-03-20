@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Nardi's Beauty Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nardi's Beauty</div>
+        <button class="hamburger">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="services-overview">
+        <h2>Our Beauty Services</h2>
+        <p>Pamper yourself with our expert beauty treatments in Addis Ababa.</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="applicnmakeup.jpg" alt="Makeup Application">
+                <h3>Makeup Application</h3>
+                <p>Transform your look with professional makeup for events, photoshoots, or daily wear. Our artists use premium products tailored to your skin tone.</p>
+                <p><strong>Price:</strong> ETB 500</p>
+                <a href="#book" class="btn small">Book Now</a>
+            </div>
+            <div class="service-card">
+                <img src="styling.jpg" alt="Hair Styling">
+                <h3>Hair Styling</h3>
+                <p>From sleek cuts to vibrant colors and intricate styles, our stylists bring your hair vision to life.</p>
+                <p><strong>Price:</strong> ETB 300</p>
+                <a href="#book" class="btn small">Book Now</a>
+            </div>
+            <div class="service-card">
+                <img src="skincare.jpg" alt="Skin Care Treatments">
+                <h3>Skin Care Treatments</h3>
+                <p>Revitalize your skin with facials, peels, and hydrating treatments customized for all skin types.</p>
+                <p><strong>Price:</strong> ETB 700</p>
+                <a href="#book" class="btn small">Book Now</a>
+            </div>
+            <div class="service-card">
+                <img src="nail.jpeg" alt="Nail Services">
+                <h3>Nail Services</h3>
+                <p>Get stunning manicures, pedicures, and nail art to complete your beauty look.</p>
+                <p><strong>Price:</strong> ETB 250</p>
+                <a href="#book" class="btn small">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nardi's Beauty Shop</h3>
+                <p>Addis Ababa, Ethiopia</p>
+                <p>Email: info@nardibeauty.et</p>
+                <p>Phone: +251 912 345 678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Beauty Tips</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://tiktok.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tiktok.svg" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 Nardi's Beauty Shop | Designed with Love</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

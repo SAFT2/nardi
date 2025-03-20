@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Nardi's Beauty Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nardi's Beauty</div>
+        <button class="hamburger">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+        <h2>Our Beauty Gallery</h2>
+        <p>A glimpse into Nardi's world of beauty, products, and services.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="perfumedisplay.png" alt="Perfume Display">
+            </div>
+            <div class="gallery-item">
+                <img src="stylehair.jpg" alt="Hair Styling">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6" alt="Makeup Products">
+            </div>
+            <div class="gallery-item">
+                <img src="Screenshot (154).png" alt="Shop Interior">
+            </div>
+            <div class="gallery-item">
+                <img src="beautypr.jpg" alt="Makeup Application">
+            </div>
+            <div class="gallery-item">
+                <img src="nailart.jpg" alt="Nail Art">
+            </div>
+
+            <div class="gallery-item">
+                <img src="humanhair.jpg" alt="Nail Art">
+            </div>
+
+            <div class="gallery-item">
+                <img src="perfumeluxury.jpg" alt="Nail Art">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nardi's Beauty Shop</h3>
+                <p>Addis Ababa, Ethiopia</p>
+                <p>Email: info@nardibeauty.et</p>
+                <p>Phone: +251 912 345 678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Beauty Tips</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://tiktok.com" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tiktok.svg" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 Nardi's Beauty Shop | Designed with Love</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
