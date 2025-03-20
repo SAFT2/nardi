@@ -77,6 +77,13 @@ body {
     color: #3a2f3f;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+}
+
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
     font-size: 60px;
@@ -86,10 +93,11 @@ body {
 
 .hero-text p {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Reduced from 40px to tighten spacing */
 }
 
-.btn {
+.hero-text .btn {
+    display: inline-block;
     padding: 12px 30px;
     background-color: #d4a373;
     color: #fff;
@@ -100,18 +108,18 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.btn:hover {
+.hero-text .btn:hover {
     background-color: #b5895a;
     transform: translateY(-3px);
 }
 
-.btn.secondary {
+.hero-text .btn.secondary {
     background-color: transparent;
     border: 2px solid #3a2f3f;
-    margin-left: 20px;
+    margin-left: 0; /* Reset margin-left for stacking */
 }
 
-.btn.secondary:hover {
+.hero-text .btn.secondary:hover {
     background-color: #3a2f3f;
     color: #fff;
 }
@@ -246,13 +254,13 @@ body {
 /* About */
 .owner-hero {
     text-align: center;
-    padding: 60px 20px; /* Increased padding for more breathing room */
+    padding: 60px 20px;
     background-color: #f9f1e9;
     border-bottom: 2px solid #d4a373;
 }
 
 .owner-hero img {
-    width: 300px; /* Bigger on desktop */
+    width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 3px solid #d4a373;
@@ -424,6 +432,10 @@ footer {
         text-align: left;
     }
 
+    .hero-text {
+        padding: 0 15px; /* Add padding to prevent edge clipping */
+    }
+
     .hero-text h1 {
         font-size: 40px;
     }
@@ -432,16 +444,29 @@ footer {
         font-size: 16px;
     }
 
+    .hero-text .btn {
+        width: 100%; /* Full width on mobile */
+        max-width: 200px; /* Cap width for readability */
+        padding: 10px 20px; /* Slightly smaller padding */
+        margin: 10px 0; /* Vertical stacking with spacing */
+    }
+
+    .hero-text .btn.secondary {
+        width: 100%; /* Match primary button */
+        max-width: 200px;
+        margin: 10px 0; /* Consistent spacing */
+    }
+
     .featured, .products, .services-overview, .testimonials, .gallery, .blog, .about, .contact {
         padding: 60px 20px;
     }
 
     .owner-hero {
-        padding: 40px 10px; /* Slightly less padding on mobile */
+        padding: 40px 10px;
     }
 
     .owner-hero img {
-        width: 200px; /* Bigger on mobile, but not too big */
+        width: 200px;
         height: 200px;
     }
 
