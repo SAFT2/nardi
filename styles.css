@@ -93,11 +93,11 @@ body {
 
 .hero-text p {
     font-size: 20px;
-    margin-bottom: 20px; /* Reduced from 40px to tighten spacing */
+    margin-bottom: 20px; /* Tightened from 40px */
 }
 
-.hero-text .btn {
-    display: inline-block;
+/* Base Button Styles */
+.btn {
     padding: 12px 30px;
     background-color: #d4a373;
     color: #fff;
@@ -106,20 +106,21 @@ body {
     font-size: 16px;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: inline-block; /* Ensure buttons behave consistently */
 }
 
-.hero-text .btn:hover {
+.btn:hover {
     background-color: #b5895a;
     transform: translateY(-3px);
 }
 
-.hero-text .btn.secondary {
+.btn.secondary {
     background-color: transparent;
     border: 2px solid #3a2f3f;
-    margin-left: 0; /* Reset margin-left for stacking */
+    margin-left: 20px; /* Side-by-side on desktop */
 }
 
-.hero-text .btn.secondary:hover {
+.btn.secondary:hover {
     background-color: #3a2f3f;
     color: #fff;
 }
@@ -433,7 +434,7 @@ footer {
     }
 
     .hero-text {
-        padding: 0 15px; /* Add padding to prevent edge clipping */
+        padding: 0 15px; /* Prevent edge clipping */
     }
 
     .hero-text h1 {
@@ -444,17 +445,20 @@ footer {
         font-size: 16px;
     }
 
+    /* Hero Buttons Only */
     .hero-text .btn {
-        width: 100%; /* Full width on mobile */
-        max-width: 200px; /* Cap width for readability */
-        padding: 10px 20px; /* Slightly smaller padding */
-        margin: 10px 0; /* Vertical stacking with spacing */
+        width: 100%;
+        max-width: 200px;
+        padding: 10px 20px;
+        margin: 10px 0; /* Stack with spacing */
     }
 
     .hero-text .btn.secondary {
-        width: 100%; /* Match primary button */
+        width: 100%;
         max-width: 200px;
-        margin: 10px 0; /* Consistent spacing */
+        padding: 10px 20px;
+        margin: 10px 0; /* Stack with spacing */
+        margin-left: 0; /* Reset desktop margin */
     }
 
     .featured, .products, .services-overview, .testimonials, .gallery, .blog, .about, .contact {
